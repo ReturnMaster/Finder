@@ -9,6 +9,7 @@
     style="@style/Material">
 
     <RelativeLayout
+        android:id="@+id/banner_layout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
@@ -19,24 +20,48 @@
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
+
         <RelativeLayout
+            android:id="@+id/hover_layout_up"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:background="@drawable/pic_hover_up"
-            android:alpha="0.5">
+            android:alpha="0.8"
+            android:visibility="invisible">
 
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/hover_layout_down"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:background="@drawable/pic_hover_down"
-            android:alpha="0.5"
+            android:alpha="0.8"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:visibility="invisible">
 
         </RelativeLayout>
     </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/test_btn"
+        android:text="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/test_btn2"
+        android:text="signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/test_btn" />
 
 
 </RelativeLayout>

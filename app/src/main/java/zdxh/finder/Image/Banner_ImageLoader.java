@@ -8,10 +8,7 @@ import android.widget.ImageView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.youth.banner.loader.ImageLoader;
 
-
 import static zdxh.finder.Image.M_ImageLoader.initImageLoader;           //static,666
-
-
 
 /**
  * Created by mkind on 2016/11/19 0019.
