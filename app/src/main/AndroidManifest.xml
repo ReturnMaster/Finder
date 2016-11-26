@@ -30,7 +30,14 @@
             android:theme="@style/Black_text_Material">
 
         </activity>
+        <activity android:name=".user.UserProfile"
+            android:theme="@style/Black_text_Material">
 
+        </activity>
+        <activity android:name=".user.UserInfo"
+            android:theme="@style/Black_text_Material">
+
+        </activity>
 
     </application>
     <!--允许联网 -->

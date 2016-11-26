@@ -32,6 +32,7 @@ import cn.bmob.v3.Bmob;
 import zdxh.finder.Image.Banner_ImageLoader;
 import zdxh.finder.user.Login;
 import zdxh.finder.user.SignUp;
+import zdxh.finder.user.UserProfile;
 
 
 public class MainActivity extends Activity {
@@ -90,6 +91,16 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        Button btn3 = (Button)findViewById(R.id.test_btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,UserProfile.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

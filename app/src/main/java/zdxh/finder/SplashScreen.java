@@ -15,7 +15,7 @@ import android.view.Window;
 
 public class SplashScreen extends Activity {
     protected boolean _active = true;
-    protected int _splashTime = 2500;
+    protected int _splashTime = 100;
     @Override
     public void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);

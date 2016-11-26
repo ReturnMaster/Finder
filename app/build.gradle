@@ -64,6 +64,15 @@ dependencies {
     compile 'cn.bmob.android:bmob-im:2.0.5@aar'
     compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
 
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //circle image
+
+    compile "com.mikepenz:iconics-core:2.8.1@aar"
+
+    //icon_font
+    compile 'com.mikepenz:google-material-typeface:2.2.0.3.original@aar'
+    //material icon font
+
 
     testCompile 'junit:junit:4.12'
 

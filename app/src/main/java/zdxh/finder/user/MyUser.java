@@ -8,8 +8,6 @@ import cn.bmob.v3.BmobUser;
 
 public class MyUser extends BmobUser {
 
-    private String usename;
-    private String password;
     private Boolean sex;
     private String nick;
     private Integer age;
