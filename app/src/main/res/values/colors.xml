@@ -6,6 +6,6 @@
     <color name="primary_material_dark_1">#00000000</color>
     <color name="app_color">#075ed8</color>
     <color name="label_text_color">#6b6b6b</color>
-    <color name="grey">#d3d3d3</color>
+    <color name="grey">#656565</color>
     <color name="error_color">#c01b1b</color>
 </resources>

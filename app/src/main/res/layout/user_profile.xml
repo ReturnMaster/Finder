@@ -46,7 +46,7 @@
             android:layout_centerHorizontal="true" />
 
         <com.mikepenz.iconics.view.IconicsImageView
-            app:iiv_icon="@string/gmd_settings"
+            app:iiv_icon="ion-ios-gear-outline"
             app:iiv_color="#ffffff"
             android:layout_width="22dp"
             android:layout_height="22dp"

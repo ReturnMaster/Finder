@@ -6,7 +6,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Black_text_Material">
         <activity android:name=".MainActivity"
             android:theme="@style/My_Material">
             <intent-filter>
@@ -35,6 +36,11 @@
 
         </activity>
         <activity android:name=".user.UserInfo"
+            android:theme="@style/Black_text_Material">
+
+        </activity>
+
+        <activity android:name=".setting.Settings"
             android:theme="@style/Black_text_Material">
 
         </activity>

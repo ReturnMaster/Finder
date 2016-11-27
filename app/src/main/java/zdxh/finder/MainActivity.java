@@ -2,18 +2,23 @@ package zdxh.finder;
 
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.util.Log;
+import android.view.InflateException;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,6 +35,7 @@ import java.util.List;
 
 import cn.bmob.v3.Bmob;
 import zdxh.finder.Image.Banner_ImageLoader;
+import zdxh.finder.setting.Settings;
 import zdxh.finder.user.Login;
 import zdxh.finder.user.SignUp;
 import zdxh.finder.user.UserProfile;
@@ -49,11 +55,15 @@ public class MainActivity extends Activity {
     }
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
-            case R.id.setting:
-                Toast.makeText(MainActivity.this,"setting",Toast.LENGTH_SHORT).show();break;
-            case R.id.search:
-                Toast.makeText(MainActivity.this,"search",Toast.LENGTH_SHORT).show();break;
+            case R.id.setting: {
+                Intent intent = new Intent(MainActivity.this, Settings.class);
+                startActivity(intent);
+            }break;
+            case R.id.search:{
+                Toast.makeText(MainActivity.this,"search",Toast.LENGTH_SHORT).show();
+            }break;
             default:
+                break;
         }
         return true;
     }
@@ -64,6 +74,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainactivity = this;
+
 
         Bmob.initialize(this, "5de6647da9b4f2149db58256e716ef15");
 

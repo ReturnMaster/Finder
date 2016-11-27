@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myActionBarStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:titleTextColor">#ffffff</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+    </style>
+</resources>
